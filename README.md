@@ -2,7 +2,7 @@
 
 ![Dashboard Preview](docs/screenshot.png)
 
-A self-hosted sales analytics platform built to replace Tableau — featuring interactive dashboards, date range filtering, and CSV export.
+A self-hosted sales analytics platform — featuring interactive dashboards, date range filtering, and CSV export.
 
 > Built with Next.js 14, Django REST Framework, Docker, Kubernetes, and Jenkins CI/CD.
 
