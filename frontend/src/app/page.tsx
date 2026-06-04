@@ -12,9 +12,10 @@ const fmtRevenue = (v: number) =>
 export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams: { days?: string }
+  searchParams: Promise<{ days?: string }>
 }) {
-  const days = parseInt(searchParams.days || '365')
+  const params = await searchParams
+  const days = parseInt(params.days || '365')
 
   const [summary, trend, products, funnel, regions] = await Promise.all([
     api.getSummary(days),

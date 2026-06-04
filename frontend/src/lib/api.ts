@@ -3,7 +3,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000'
 async function fetchAPI<T>(path: string, params?: Record<string, string>): Promise<T> {
   const url = new URL(`${BASE_URL}/api/v1${path}`)
   if (params) Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v))
-  const res = await fetch(url.toString(), { cache: 'no-store' })
+  const res = await fetch(url.toString(), { next: { revalidate: 60 } })
   if (!res.ok) throw new Error(`API error: ${res.status}`)
   return res.json()
 }

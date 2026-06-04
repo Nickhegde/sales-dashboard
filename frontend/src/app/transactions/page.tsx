@@ -12,10 +12,11 @@ const STATUS_COLORS: Record<string, string> = {
 export default async function TransactionsPage({
   searchParams,
 }: {
-  searchParams: { page?: string; days?: string }
+  searchParams: Promise<{ page?: string; days?: string }>
 }) {
-  const page = parseInt(searchParams.page || '1')
-  const days = parseInt(searchParams.days || '365')
+  const params = await searchParams
+  const page = parseInt(params.page || '1')
+  const days = parseInt(params.days || '365')
   const data = await api.getTransactions(page, days)
   const exportUrl = api.getExportUrl(days)
 
