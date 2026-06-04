@@ -4,6 +4,8 @@
 
 A self-hosted sales analytics platform — featuring interactive dashboards, date range filtering, and CSV export.
 
+**[Live Demo →](https://sales-dashboard-frontend-production.up.railway.app)**
+
 > Built with Next.js 14, Django REST Framework, Docker, Kubernetes, and Jenkins CI/CD.
 
 ---
@@ -26,6 +28,7 @@ A self-hosted sales analytics platform — featuring interactive dashboards, dat
 | Frontend  | Next.js 14 (App Router), TypeScript, Recharts   |
 | Backend   | Django 5, Django REST Framework                 |
 | Infra     | Docker, Kubernetes, Jenkins CI/CD               |
+| Hosting   | Railway — Frontend + Backend (US West)          |
 
 ---
 
