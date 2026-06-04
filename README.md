@@ -31,6 +31,7 @@ A self-hosted sales analytics platform — featuring interactive dashboards, dat
 
 ## Project Structure
 
+```
 sales-dashboard/
 ├── frontend/
 │   └── src/
@@ -46,6 +47,8 @@ sales-dashboard/
 ├── k8s/                          # Kubernetes manifests
 ├── Jenkinsfile                   # CI/CD pipeline
 └── docker-compose.yml            # Local dev
+
+```
 
 ---
 
