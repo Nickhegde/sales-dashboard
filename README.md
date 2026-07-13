@@ -4,7 +4,7 @@
 
 A self-hosted sales analytics platform — featuring interactive dashboards, date range filtering, and CSV export.
 
-**[Live Demo →](https://sales-dashboard-frontend-production.up.railway.app)**
+**[Live Demo →](https://sales-dashboard-self-gamma.vercel.app/)**
 
 > Built with Next.js 14, Django REST Framework, Docker, Kubernetes, and Jenkins CI/CD.
 
